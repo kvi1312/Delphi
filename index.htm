@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+</head>
+<body>
+    <h2>Product List</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="product-table">
+        </tbody>
+    </table>
+
+    <script>
+        async function loadProducts() {
+            const response = await fetch("http://localhost:8080/api/get-all-products");
+            const products = await response.json();
+
+            let table = document.getElementById("product-table");
+            table.innerHTML = "";
+
+            products.forEach(product => {
+                let row = `<tr>
+                    <td>${product.ID}</td>
+                    <td>${product.Name}</td>
+                    <td>${product.Brand}</td>
+                    <td>${product.Price}</td>
+                </tr>`;
+                table.innerHTML += row;
+            });
+        }
+
+        // Call function when page loads
+        window.onload = loadProducts;
+    </script>
+</body>
+</html>
+

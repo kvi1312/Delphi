@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/03/03 10:39:42.000.493,=C:\Users\KhaiLe\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2025/03/03 10:47:51.001,=C:\Users\KhaiLe\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2025/03/03 10:47:51.124,=C:\Users\KhaiLe\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2025/03/03 10:47:51.158,=C:\Users\KhaiLe\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2025/03/03 10:47:53.508,=C:\Users\KhaiLe\Documents\Embarcadero\Studio\Projects\Unit5.pas</Transaction>
+    <Transaction>2025/03/03 10:48:32.599,C:\Users\KhaiLe\Downloads\Delphi\Unit5.dfm=C:\Users\KhaiLe\Documents\Embarcadero\Studio\Projects\Unit5.dfm</Transaction>
+    <Transaction>2025/03/03 10:48:32.599,C:\Users\KhaiLe\Downloads\Delphi\Unit5.pas=C:\Users\KhaiLe\Documents\Embarcadero\Studio\Projects\Unit5.pas</Transaction>
+    <Transaction>2025/03/03 10:48:33.680,C:\Users\KhaiLe\Downloads\Delphi\Unit4.pas=C:\Users\KhaiLe\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2025/03/03 10:48:37.154,C:\Users\KhaiLe\Downloads\Delphi\Unit3.pas=C:\Users\KhaiLe\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2025/03/03 10:48:38.639,C:\Users\KhaiLe\Downloads\Delphi\Unit2.pas=C:\Users\KhaiLe\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2025/03/03 10:48:40.274,C:\Users\KhaiLe\Downloads\Delphi\Project2.dproj=C:\Users\KhaiLe\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,40 @@
+unit ProductController;
+
+interface
+
+uses
+  MVCFramework, MVCFramework.Commons, MVCFramework.Nullables, ProductModel,
+  ProductService, MVCFramework.Serializer.Commons, System.Generics.Collections;
+
+type
+
+  [MVCPath('/api')]
+  TProductController = class(TMVCController)
+  public
+    [MVCPath('/get-all-products')]
+    [MVCHTTPMethod([httpGET])]
+    function GetAllProduct([MVCInject] ProductService : IProductService): IMVCResponse;
+  end;
+
+implementation
+
+
+{ TProductController }
+
+
+{ TProductController }
+
+function TProductController.GetAllProduct(
+  ProductService: IProductService): IMVCResponse;
+var
+  Products: TObjectList<TProduct>;
+begin
+  Products := ProductService.GetAllProducts;
+  if (Products = nil) or (Products.Count = 0) then
+    Render(HTTP_STATUS.NoContent, 'No products found')
+  else
+    Render(Products);
+end;
+
+
+end.
