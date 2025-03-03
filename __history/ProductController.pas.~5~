@@ -13,20 +13,22 @@ type
   public
     [MVCPath('/get-all-products')]
     [MVCHTTPMethod([httpGET])]
-    function GetAllProduct([MVCInject] ProductService: IProductService)
-      : IMVCResponse;
+    function GetAllProduct([MVCInject] ProductService : IProductService): IMVCResponse;
   end;
 
 implementation
 
-{ TProductController }
 
 { TProductController }
 
-function TProductController.GetAllProduct(ProductService: IProductService)
-  : IMVCResponse;
+
+{ TProductController }
+
+function TProductController.GetAllProduct(
+  ProductService: IProductService): IMVCResponse;
 begin
-  Result := OKResponse(ProductService.GetAllProducts);
+Result := OKResponse(ProductService.GetAllProducts);
 end;
+
 
 end.
